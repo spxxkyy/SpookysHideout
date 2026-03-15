@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(20, 20, 20);
+}
+
+
+.backbflex {
+  position: fixed;  /* Stay stuck to the corner, even on scroll */
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.backbutton {
+  all: unset;
+  font-family: 'Fredoka One', cursive;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  padding: 6px 10px;
+  display: inline-block;
+  line-height: 1;
+}
+
+.datebox {
+padding-left: 50px;
+}
+
+.date {
+user-select: none;
+  font-family: 'Fredoka One', cursive;
+  color: white;
+  font-size: x-large;
+}
+
+.logbox {
+  padding-left: 70px; /* Same here */
+}
+
+.log {
+  user-select: none;
+  font-family: 'Fredoka One', cursive;
+  color: white;
+}
+
+.log-image {
+ height: 350px;
+}
+
+.log-image2 {
+ height: 350px;
+}
+
+.log-image3 {
+ height: 150px;
+}
+
+.intro {
+  user-select: none;
+  font-family: 'Fredoka One', cursive;
+  color: white;
+  text-align: center;
+  font-size: larger;
+}
+
+

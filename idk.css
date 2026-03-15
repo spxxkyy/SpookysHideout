@@ -1,0 +1,351 @@
+/* Landing page styles currently used by home.html */
+.landing-page {
+  --bg: rgb(20, 20, 20);
+  --text: rgb(255, 255, 255);
+  --muted: rgba(255, 255, 255, 0.78);
+  --panel: rgba(255, 255, 255, 0.035);
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.landing-page,
+.landing-page * {
+  box-sizing: border-box;
+  font-family: 'Fredoka One', cursive;
+}
+
+.landing-site {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 30px 20px 58px;
+}
+
+.landing-page a {
+  color: white;
+}
+
+.landing-hero {
+  text-align: center;
+  padding: 70px 14px 56px;
+}
+
+.game-title {
+  margin: 14px 0 0;
+  font-family: 'Staatliches', 'Fredoka One', cursive;
+  font-size: clamp(2.6rem, 8vw, 5.3rem);
+  line-height: 0.95;
+}
+
+.hero-copy {
+  margin: 18px auto 0;
+  max-width: 780px;
+  font-size: clamp(1.05rem, 2.5vw, 1.34rem);
+  line-height: 1.44;
+  letter-spacing: 0.015em;
+  color: var(--muted);
+}
+
+.devlog-link {
+  display: inline-block;
+  margin-top: 26px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  font-size: clamp(1.12rem, 2.9vw, 1.45rem);
+  letter-spacing: 0.02em;
+}
+
+.devlog-link:hover {
+  opacity: 0.82;
+}
+
+.narrative-block {
+  padding: 44px 0 42px;
+  display: block;
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.narrative-main h2 {
+  margin: 0;
+  font-size: clamp(1.45rem, 3.2vw, 2rem);
+}
+
+.narrative-main p {
+  margin: 12px 0 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  line-height: 1.45;
+  letter-spacing: 0.015em;
+  color: var(--muted);
+}
+
+.features-block {
+  padding: 44px 0 42px;
+}
+
+.features-intro {
+  max-width: 840px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.features-intro h2 {
+  margin: 0;
+  font-size: clamp(1.45rem, 3.2vw, 2rem);
+}
+
+.features-intro p {
+  margin: 11px auto 0;
+  max-width: 760px;
+  font-size: clamp(0.98rem, 2.2vw, 1.16rem);
+  line-height: 1.42;
+  letter-spacing: 0.015em;
+  color: var(--muted);
+}
+
+.features-list {
+  margin: 30px auto 0;
+  max-width: 920px;
+  text-align: left;
+}
+
+.feature-row {
+  margin: 0;
+  padding: 2px 4px;
+}
+
+.feature-row + .feature-row {
+  margin-top: 34px;
+}
+
+.feature-row h3 {
+  margin: 0;
+  font-size: clamp(1.03rem, 2.35vw, 1.2rem);
+  letter-spacing: 0.01em;
+}
+
+.feature-row p {
+  margin: 10px 0 0;
+  max-width: 860px;
+  font-size: clamp(0.92rem, 2vw, 1.04rem);
+  line-height: 1.42;
+  letter-spacing: 0.012em;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.showcase-block {
+  padding: 44px 0 44px;
+}
+
+.showcase-intro {
+  max-width: 760px;
+  margin: 0 auto 22px;
+  text-align: center;
+}
+
+.showcase-intro p {
+  margin: 10px 0 0;
+  font-size: clamp(0.98rem, 2.2vw, 1.15rem);
+  line-height: 1.42;
+  letter-spacing: 0.015em;
+  color: var(--muted);
+}
+
+.showcase-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  align-items: start;
+}
+
+.showcase-primary {
+  grid-column: 1 / -1;
+}
+
+.showcase-card {
+  margin: 0;
+  background: var(--panel);
+}
+
+.showcase-card img {
+  width: 100%;
+  display: block;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.showcase-card figcaption {
+  margin: 0;
+  padding: 10px 12px 12px;
+  font-size: 0.95rem;
+  line-height: 1.34;
+  letter-spacing: 0.012em;
+  color: rgba(255, 255, 255, 0.88);
+  text-align: left;
+}
+
+.release-block {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 56px 0 34px;
+  text-align: center;
+}
+
+.release-block h2,
+.donation-block h2,
+.devlog-band h2 {
+  margin: 0;
+  font-size: clamp(1.4rem, 3vw, 1.95rem);
+}
+
+.release-block p,
+.donation-block p,
+.devlog-band p {
+  margin: 12px auto 0;
+  max-width: 760px;
+  font-size: clamp(0.98rem, 2.2vw, 1.15rem);
+  line-height: 1.42;
+  letter-spacing: 0.015em;
+  color: var(--muted);
+}
+
+.donation-block {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 18px 0 36px;
+  text-align: center;
+}
+
+.donation-link {
+  display: inline-block;
+  margin-top: 16px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  font-size: clamp(0.95rem, 2.2vw, 1.06rem);
+  letter-spacing: 0.015em;
+}
+
+.donation-link:hover {
+  opacity: 0.82;
+}
+
+.devlog-band {
+  text-align: center;
+  padding: 20px 10px 18px;
+}
+
+.devlog-highlight {
+  margin: 0 auto;
+  max-width: 820px;
+  font-size: clamp(1.04rem, 2.5vw, 1.32rem);
+  line-height: 1.45;
+  letter-spacing: 0.015em;
+  color: var(--muted);
+}
+
+.devlog-link-large {
+  margin-top: 16px;
+  font-size: clamp(0.95rem, 2.2vw, 1.06rem);
+  letter-spacing: 0.015em;
+}
+
+.landing-footer {
+  margin-top: 22px;
+  padding-top: 16px;
+  text-align: center;
+}
+
+.footer-contact-block {
+  margin-top: 0;
+  padding-top: 14px;
+  width: min(560px, 92%);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-contact-label {
+  margin: 0;
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  letter-spacing: 0.03em;
+  opacity: 0.86;
+}
+
+.footer-contact-email {
+  margin: 8px 0 0;
+  font-size: clamp(1rem, 2.1vw, 1.12rem);
+  letter-spacing: 0.01em;
+}
+
+.footer-github-logo {
+  display: inline-block;
+  margin-top: 14px;
+  color: white;
+  font-size: 58px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.footer-github-logo:hover {
+  opacity: 0.85;
+}
+
+.footer-github-logo ion-icon {
+  font-size: inherit;
+}
+
+@media screen and (max-width: 1000px) {
+  .landing-site {
+    padding-top: 22px;
+  }
+
+  .narrative-block {
+    max-width: 820px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .landing-site {
+    padding: 18px 12px 46px;
+  }
+
+  .landing-hero {
+    padding: 56px 6px 42px;
+  }
+
+  .showcase-layout {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .features-list {
+    margin-top: 20px;
+  }
+
+  .feature-row + .feature-row {
+    margin-top: 26px;
+  }
+
+  .showcase-card figcaption {
+    text-align: center;
+  }
+
+  .footer-contact-block {
+    padding-top: 12px;
+    width: min(560px, 95%);
+  }
+
+  .footer-github-logo {
+    margin-top: 12px;
+    font-size: 52px;
+  }
+}
