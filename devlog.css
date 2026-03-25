@@ -63,3 +63,64 @@ user-select: none;
 }
 
 
+/* Responsive rules - only affect small viewports, leave desktop unchanged */
+@media (max-width: 800px) {
+  .datebox,
+  .logbox {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .date {
+    font-size: large;
+  }
+
+  .log {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .backbflex {
+    top: 8px;
+    left: 8px;
+  }
+
+  .backbutton {
+    font-size: 20px;
+    padding: 4px 8px;
+  }
+
+  .log-image,
+  .log-image2,
+  .log-image3 {
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 8px 0;
+  }
+
+  audio {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .intro {
+    font-size: 1.05rem;
+    padding: 4px 2px;
+  }
+}
+
+@media (max-width: 420px) {
+  .date {
+    font-size: 1.05rem;
+  }
+
+  .log {
+    font-size: 15px;
+  }
+  .backbutton {
+    font-size: 18px;
+  }
+}
+
+
