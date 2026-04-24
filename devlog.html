@@ -469,6 +469,30 @@ with a quantity counter would make the counter disappear<br>-Added a visual indi
 <p class="log">-Added the first boss enemy to the game to the wine cellar<br>-Added unique visuals and features for boss type enemies<br>-Improved looting visuals<br>-Added sound effects to consumable potions<br>-Major progress towards the winecellar dungeon</p>
 </div>
 
+<div class="datebox">
+<p class="date">Wednesday, April 8th</p>
+</div>
+
+<div class="logbox">
+<p class="log">-Added a confirmation pop-up when using quest items, or when deleting items<br>-You can now drop items from you inventory by dragging it outside of the inventory window<br>-Added a drag start and drag drop logic and sounds for certain items<br>-Started working on the logic of the beastiary feature<br>-Added a market price library for all items<br>-Reworked and fixed the layout for the inventory and armor windows<br>-Made progress towards the cellar dungeon which is now done code-wise<br>-Added many lootable crates in the dungeon with a logic that will randomly generate certain loot<br>-Added a logic that would randomly put the door handle quest item in a crate instead of having a static location</p>
+</div>
+
+<div class="datebox">
+<p class="date">Saturday, April 11th</p>
+</div>
+
+<div class="logbox">
+<p class="log">-Started working on the basics of the beastiary/book of shadows feature</p>
+</div>
+
+<div class="datebox">
+<p class="date">Sunday, April 19th</p>
+</div>
+
+<div class="logbox">
+<p class="log">-Added a system that scales enemies based on how powerful they are, so if an encountered enemy could 2-3 shot the player they will have the "abyssal" classification.<br>-Added a noise logic for armor, noise will decide how often you encounter an enemy, for an example louder plate armor will attract more enemies (roughly +25% more) and quieter cloth armor will reduce the base value by 25%<br>-Added a new "shadow step" potion which reduces the players noise by 50%<br>-Fixed bugs related to the inventory UI<br>-Added a new status effect "necrosis" which reduces all incoming healing and ticks damage.<br>-Added seperate health pools for each major body part of the player which reacts to damage and causes certain effects when damaged/broken<br><br>Examples:<br><br>Breaking an arm: prevents the player from using items with that arm<br>Damaging the head: Blunt attacks to the head will cause the stagger effect, if the head pool drops down to 0, the chance of a stagger gets higher<br>Breaking a leg: Adds a delay to the players movement after entering a location so the player wont be able to switch locations as fast<br>Damaging the neck: Repeated attacks to the neck will result in the player dying ignoring the main health pool</p>
+</div>
+
 <script>
   window.addEventListener("load", function () {
     window.scrollTo(0, document.body.scrollHeight);
