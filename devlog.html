@@ -489,6 +489,37 @@ with a quantity counter would make the counter disappear<br>-Added a visual indi
 <p class="log">-Added a system that scales enemies based on how powerful they are, so if an encountered enemy could 2-3 shot the player they will have the "abyssal" classification.<br>-Added a noise logic for armor, noise will decide how often you encounter an enemy, for an example louder plate armor will attract more enemies (roughly +25% more) and quieter cloth armor will reduce the base value by 25%<br>-Added a new "shadow step" potion which reduces the players noise by 50%<br>-Fixed bugs related to the inventory UI<br>-Added a new status effect "necrosis" which reduces all incoming healing and ticks damage.<br>-Added seperate health pools for each major body part of the player which reacts to damage and causes certain effects when damaged/broken<br><br>Examples:<br><br>Breaking an arm: prevents the player from using items with that arm<br>Damaging the head: Blunt attacks to the head will cause the stagger effect, if the head pool drops down to 0, the chance of a stagger gets higher<br>Breaking a leg: Adds a delay to the players movement after entering a location so the player wont be able to switch locations as fast<br>Damaging the neck: Repeated attacks to the neck will result in the player dying ignoring the main health pool</p>
 </div>
 
+<div class="datebox">
+<p class="date">Thursday, September 3rd</p>
+</div>
+
+<div class="datebox">
+<p class="date">Update on the development:</p>
+</div>
+
+<div class="logbox">
+<p class="log">Due to unfortunate chain of events, the last 2 months worth of progress is lost, however i am officially back developing the game. My pc got wiped and a bad habbit i had is that i backed up everything to a zip file instead of using better back up tools, the last save happened on february 22nd which is not a huge loss but its big enough to take up a week or two<br><br>So from now on, i will continue working on restoring the game to the point where it was and use the devlog as a task list<br><br>I have learned my lesson and i set up better fallback just in case this happens again, now after every major change the zip will be uploaded to the official github page, and a safety net script copies the current version every day and uploads it to a cloud server</p>
+</div>
+
+<div class="datebox">
+<p class="date">Restore progress:</p>
+</div>
+
+
+<div class="logbox">
+<p class="log"><s>-Added a logic that mirrors the equipped weapon based on which hand is holding it</s><br>
+  <br>>> Added the logic that flips the currently active items graphic based on which hand its in<br><br>
+  <s>-Added a parrying mechanic</s><br>
+  <br>>> Added the parrying mechanic with slightly different visuals<br><br>
+  <br>-Added a volume slider to all sounds and a checkmark that mutes the wine cellar music in the dev panel, this is only for development purposes only
+  <br>-Added a small unequip logic for when drag and dropping an item from one hand to another which wasnt present in the earlier build, which makes putting an item to another hand cleaner
+  <br>-Added a reworked bleed visual effect
+  <br>-Restored the parry/hit/hurt visual effects
+  <br>-Restored the status effect animation and behavior.
+  <br>
+</p>
+</div>
+
 <script>
   window.addEventListener("load", function () {
     window.scrollTo(0, document.body.scrollHeight);
